@@ -1,0 +1,18 @@
+.latestDesign {
+	position: relative;
+	background: rgba(216, 224, 232, 0) url("../img/rectanle-31.png");
+	
+}
+
+#arrow-bottom {
+	position: absolute;
+	top: -57px;
+	right: 50%;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 114px;
+	height: 114px;
+	background: url('../img/next.svg') no-repeat center;
+	background-color: #ffffff;
+	z-index: 10;
+}

@@ -1,0 +1,68 @@
+.masthead {
+	background: #a100ff url("../img/header--back.png");
+	padding-top: 333px;
+	position: relative;
+	z-index: 9;
+	
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.btn-submit {
+		background-color: $turquoise;
+		font-size: 0;
+		width: 64px;
+		height: 59px;
+		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3);
+		border-radius: 5px;
+		&::after {
+			background: url('../img/btn-arrow.svg');
+			top: 21px;
+			left: 24px;
+			width: 16px;
+			height: 17px;
+		}
+	}
+}
+.head-slogan {
+	font-family: "MontserratBold"; 
+	font-size: 60px;
+	line-height: 60px;
+	text-transform: uppercase;
+	max-width: 515px;
+	color: #fff;
+	margin-bottom: 41px;
+}
+.head-description {
+	color: #ffffff;
+	font-family: "GothamProMedium";
+	font-size: 16px;
+	line-height: 24px;
+	max-width: 512px;
+	margin-bottom: 27px;
+}
+.head-form {
+	margin-bottom: 262px;
+	display: flex;
+	.head-form--item {
+		font-family: "Montserrat";
+		font-size: 14px;
+		margin-right: 17px;
+		padding: 0 10px;
+		height: 60px;
+		background-image: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
+		box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+		border-radius: 3px;
+	}
+	#designStyle {
+		width: 282px;	
+	}
+	.head-form__email {
+		width: 268px;
+		box-sizing: border-box;
+		&::-webkit-input-placeholder {color:#000000;}
+		&::-moz-placeholder          {color:#000000;}
+		&:-moz-placeholder           {color:#000000;}
+		&:-ms-input-placeholder      {color:#000000;}
+	}
+}
