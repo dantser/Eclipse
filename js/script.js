@@ -1,9 +1,13 @@
 function slider () {
 	$('.filter--item').click( function () {
+		$('.output--item').fadeTo('400', 0.2, function(){
+			$(this).fadeTo('400', 1);
+		});
 		$('.filter--item').removeClass('filter--item__active');
 		$(this).toggleClass('filter--item__active');
 		$('.output--items').removeClass('output--items__active');
 	});
+	
 	$('#dev').click( function () {
 		$('#dev__items').toggleClass('output--items__active');
 	});
@@ -17,4 +21,3 @@ function slider () {
 		$('#design__items').toggleClass('output--items__active');
 	});
 }
-slider();
