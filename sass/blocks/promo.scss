@@ -1,0 +1,26 @@
+.promo {
+	background: url("../img/layer-4.png") no-repeat;
+	background-size: contain;
+	position: relative;
+	padding-bottom: 697px;
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.logo--promo {
+		padding-top: 332px;
+	}
+	.head-slogan {
+		padding: 334px 0 0 41px;
+		margin-bottom: 41px;
+	}
+	.head-description {
+		padding-left: 219px;
+		margin-bottom: 322px;
+	}
+}
+.promo--notebook {
+	position: absolute;
+	left: 495px;
+	top: 462px;
+}

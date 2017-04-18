@@ -1,9 +1,9 @@
 .masthead {
-	background: #a100ff url("../img/header--back.png");
+	background: #a100ff url("../img/header--back.png") no-repeat;
+	background-size: cover;
 	padding-top: 333px;
 	position: relative;
 	z-index: 9;
-	
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -23,6 +23,20 @@
 			height: 17px;
 		}
 	}
+		.arrow-bottom {
+			position: absolute;
+			bottom: -57px;
+			right: 50%;
+			cursor: pointer;
+			width: 114px;
+			height: 114px;
+			border-radius: 50%;
+			background: url("../img/next.svg"), url("../img/novelity-bg.jpg");
+    		background-position: center, bottom;
+    		background-repeat: no-repeat, repeat;
+			z-index: 0;
+			transform: translateX(50%);
+	}
 }
 .head-slogan {
 	font-family: "MontserratBold"; 
@@ -35,7 +49,7 @@
 }
 .head-description {
 	color: #ffffff;
-	font-family: "GothamProMedium";
+	
 	font-size: 16px;
 	line-height: 24px;
 	max-width: 512px;

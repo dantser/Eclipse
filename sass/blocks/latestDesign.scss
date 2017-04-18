@@ -1,18 +1,39 @@
 .latestDesign {
 	position: relative;
-	background: rgba(216, 224, 232, 0) url("../img/rectanle-31.png");
+	background: rgba(216, 224, 232, 0) url("../img/novelity-bg.jpg");
+	background-repeat: repeat;
+	text-align: center;
+	z-index: 0;
+	margin-bottom: 160px;
 	
+	.arrow-bottom {
+		position: absolute;
+		bottom: -55px;
+		right: 50%;
+		cursor: pointer;
+		width: 114px;
+		height: 114px;
+		border-radius: 50%;
+		background: url("../img/nextWhite.svg") no-repeat center;
+		z-index: 100;
+		background-color: $turquoise;
+		transform: translateX(50%);
+	}
+}
+.iphoneImg {
+	transform: translateY(3px);
 }
 
-#arrow-bottom {
-	position: absolute;
-	top: -57px;
-	right: 50%;
-	cursor: pointer;
-	border-radius: 50%;
-	width: 114px;
-	height: 114px;
-	background: url('../img/next.svg') no-repeat center;
-	background-color: #ffffff;
-	z-index: 10;
+.latestDesign--header {
+	padding-top: 118px;
+	margin-bottom: 41px;
+	color: $hColor;
+	text-transform: uppercase;
+}
+.section-description {
+	color: $textColor;
+	min-width: 661px;
+	margin: 0 auto;
+	margin-bottom: 73px;
+	font-size: 14px;
 }

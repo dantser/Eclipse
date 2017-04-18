@@ -16,7 +16,7 @@
     url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
     url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
 }
 /* font-family: "Montserrat"; */
 @font-face {
@@ -25,10 +25,19 @@
     src: local(Montserrat), url(../fonts/Montserrat/Montserrat-Regular.ttf); 
 	 font-style: normal;
 }
-/* font-family: "Montserrat"; */
+/* font-family: "MontserratBold"; */
 @font-face {
     font-family: "MontserratBold"; 
     src: url(../fonts/Montserrat/Montserrat-Bold.ttf); /* Для IE5-8 */
     src: local(Montserrat), url(../fonts/Montserrat/Montserrat-Bold.ttf); 
 	 font-style: normal;
+	 font-weight: bold;
+}
+/* font-family: "Fira Sans"; */
+@font-face {
+	font-family: "Fira Sans"; 
+    src: url(../fonts/FiraSans-Bold.ttf); /* Для IE5-8 */
+    src: local(Montserrat), url(../fonts/FiraSans-Bold.ttf); 
+	 font-style: normal;
+	 font-weight: bold;
 }
