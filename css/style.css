@@ -309,6 +309,8 @@ body {
 .features {
   background-color: #f6f9fa;
   padding-top: 136px; }
+  .features .wrapper {
+    padding-bottom: 98px; }
   .features .section-header {
     margin-bottom: 28px;
     text-align: center; }
@@ -341,8 +343,14 @@ body {
     background-color: #28c8c6;
     color: #f6f9fa; }
   .features .output--items {
+    display: none;
+    opacity: 0;
+    justify-content: space-around;
+    transition: all 0.5s ease; }
+  .features .output--items__active {
     display: flex;
-    justify-content: space-around; }
+    opacity: 1;
+    transition: all 0.5s ease; }
   .features .output--item {
     max-width: 382px;
     position: relative;
