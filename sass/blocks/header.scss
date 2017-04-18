@@ -1,7 +1,13 @@
+.scrolled {
+	margin-top: -77px;
+	background-color: rgba(63,0,100,0.8);
+	padding: 5px 0;
+}
 .header {
 	position: fixed;
 	width: 100%;
-	z-index: 11;
+	z-index: 1000;
+	transition: all 0.5s ease;
 	.wrapper {
 		display: flex;
 		flex-direction: row;
@@ -17,7 +23,6 @@
 		&:last-child {
 			padding: 10px 0;
 		}
-			
 	}
 	ul {
 		display: flex;
@@ -39,6 +44,7 @@
 		padding: 10px 55px 10px 30px;
 		border: 1px solid $pink;
 		font-size: 16px;
+		opacity: 0.8;
 		&::after {
 			background: url('../img/btn-arrow.svg');
 			width: 16px;
@@ -48,6 +54,7 @@
 		}
 		&:hover {
 			border-bottom: 1px solid $pink!important;
+			opacity: 1;
 		}
 	}
 }

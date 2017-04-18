@@ -75,9 +75,9 @@
 	.head-form__email {
 		width: 268px;
 		box-sizing: border-box;
-		&::-webkit-input-placeholder {color:#000000;}
-		&::-moz-placeholder          {color:#000000;}
-		&:-moz-placeholder           {color:#000000;}
-		&:-ms-input-placeholder      {color:#000000;}
+		&::-webkit-input-placeholder {color:#333333; opacity: 0.9;}
+		&::-moz-placeholder          {color:#333333; opacity: 0.9;}
+		&:-moz-placeholder           {color:#333333; opacity: 0.9;}
+		&:-ms-input-placeholder      {color:#33333; opacity: 0.9;}
 	}
 }

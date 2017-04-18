@@ -1,3 +1,14 @@
+$(document).ready(function() {
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll >= 200) {
+      $("#header").addClass("scrolled");
+    } else {
+      $("#header").removeClass("scrolled");
+    }
+  });
+});
+
 function slider () {
 	$('.filter--item').click( function () {
 		$('.output--item').fadeTo('400', 0.2, function(){
@@ -21,3 +32,4 @@ function slider () {
 		$('#design__items').toggleClass('output--items__active');
 	});
 }
+slider();
