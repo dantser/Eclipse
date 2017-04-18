@@ -71,13 +71,38 @@
 	}
 	#designStyle {
 		width: 282px;	
+		
 	}
 	.head-form__email {
 		width: 268px;
 		box-sizing: border-box;
-		&::-webkit-input-placeholder {color:#333333; opacity: 0.9;}
-		&::-moz-placeholder          {color:#333333; opacity: 0.9;}
-		&:-moz-placeholder           {color:#333333; opacity: 0.9;}
-		&:-ms-input-placeholder      {color:#33333; opacity: 0.9;}
+		font-family: "Montserrat";
+		font-weight: normal;
+		position: relative;
+		&::-webkit-input-placeholder {
+			color:#333333; 
+			opacity: 0.9;
+		}
+		&::-moz-placeholder {
+			color:#333333; 
+			opacity: 0.9;
+		}
+		&:-moz-placeholder {
+			color:#333333; 
+			opacity: 0.9;
+		}
+		&:-ms-input-placeholder {
+			color:#333333; 
+			opacity: 0.9;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			width: 13px;
+			height: 15px;
+			background: url("../img/arrowform.svg");
+			right: 20px;
+			
+		}
 	}
 }

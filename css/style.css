@@ -209,15 +209,29 @@ body {
     width: 282px; }
   .head-form .head-form__email {
     width: 268px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-weight: normal;
+    position: relative; }
     .head-form .head-form__email::-webkit-input-placeholder {
-      color: #000000; }
+      color: #333333;
+      opacity: 0.9; }
     .head-form .head-form__email::-moz-placeholder {
-      color: #000000; }
+      color: #333333;
+      opacity: 0.9; }
     .head-form .head-form__email:-moz-placeholder {
-      color: #000000; }
+      color: #333333;
+      opacity: 0.9; }
     .head-form .head-form__email:-ms-input-placeholder {
-      color: #000000; }
+      color: #333333;
+      opacity: 0.9; }
+    .head-form .head-form__email::after {
+      position: absolute;
+      content: "";
+      width: 13px;
+      height: 15px;
+      background: url("../img/arrowform.svg");
+      right: 20px; }
 
 .latestDesign {
   position: relative;
@@ -485,4 +499,5 @@ body {
   text-align: right; }
 
 .footer--end {
-  flex-basis: 100%; }
+  flex-basis: 100%;
+  margin-bottom: 151px; }
