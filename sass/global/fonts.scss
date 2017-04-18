@@ -1,6 +1,6 @@
 /* font-family: "GothamProMedium"; */
 @font-face {
-    font-family: "GothamProMedium";
+    font-family: "Gotham";
     src: url("../fonts/GothamProMedium/GothamProMedium.eot");
     src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
     url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
@@ -10,7 +10,7 @@
 }
 /* font-family: "GothamProBold"; */
 @font-face {
-    font-family: "GothamProBold";
+    font-family: "Gotham";
     src: url("../fonts/GothamProBold/GothamProBold.eot");
     src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
     url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
@@ -24,10 +24,11 @@
     src: url(../fonts/Montserrat/Montserrat-Regular.ttf); /* Для IE5-8 */
     src: local(Montserrat), url(../fonts/Montserrat/Montserrat-Regular.ttf); 
 	 font-style: normal;
+	 font-weight: normal;
 }
 /* font-family: "MontserratBold"; */
 @font-face {
-    font-family: "MontserratBold"; 
+    font-family: "Montserrat"; 
     src: url(../fonts/Montserrat/Montserrat-Bold.ttf); /* Для IE5-8 */
     src: local(Montserrat), url(../fonts/Montserrat/Montserrat-Bold.ttf); 
 	 font-style: normal;

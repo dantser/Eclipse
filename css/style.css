@@ -37,7 +37,7 @@ button {
 
 /* font-family: "GothamProMedium"; */
 @font-face {
-  font-family: "GothamProMedium";
+  font-family: "Gotham";
   src: url("../fonts/GothamProMedium/GothamProMedium.eot");
   src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
   font-style: normal;
@@ -45,7 +45,7 @@ button {
 
 /* font-family: "GothamProBold"; */
 @font-face {
-  font-family: "GothamProBold";
+  font-family: "Gotham";
   src: url("../fonts/GothamProBold/GothamProBold.eot");
   src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
   font-style: normal;
@@ -57,11 +57,12 @@ button {
   src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
   /* Для IE5-8 */
   src: local(Montserrat), url(../fonts/Montserrat/Montserrat-Regular.ttf);
-  font-style: normal; }
+  font-style: normal;
+  font-weight: normal; }
 
 /* font-family: "MontserratBold"; */
 @font-face {
-  font-family: "MontserratBold";
+  font-family: "Montserrat";
   src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
   /* Для IE5-8 */
   src: local(Montserrat), url(../fonts/Montserrat/Montserrat-Bold.ttf);
@@ -78,7 +79,8 @@ button {
   font-weight: bold; }
 
 body {
-  font-family: "GothamProMedium"; }
+  font-family: "Gotham";
+  font-weight: normal; }
 
 .wrapper {
   margin: 0 auto;
@@ -109,7 +111,8 @@ body {
 .menu a {
   color: #ffffff;
   padding: 0 2px 25px;
-  font-family: "GothamProMedium";
+  font-family: "Gotham";
+  font-weight: normal;
   font-size: 14px; }
   .menu a:hover {
     border-bottom: 3px solid #28c8c6; }
@@ -166,7 +169,8 @@ body {
     transform: translateX(50%); }
 
 .head-slogan {
-  font-family: "MontserratBold";
+  font-family: "Montserrat";
+  font-weight: bold;
   font-size: 60px;
   line-height: 60px;
   text-transform: uppercase;
@@ -304,8 +308,73 @@ body {
 
 .features {
   background-color: #f6f9fa;
-  text-align: center;
   padding-top: 136px; }
+  .features .section-header {
+    margin-bottom: 28px;
+    text-align: center; }
+  .features .section-description {
+    max-width: 901px;
+    line-height: 25px;
+    margin-bottom: 44px;
+    text-align: center; }
+  .features .filter {
+    max-width: 565px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+    border: 1px solid #28c8c6;
+    color: #28c8c6;
+    font-size: 0;
+    text-transform: uppercase;
+    font-family: "Gotham";
+    font-weight: bold; }
+  .features .filter--item {
+    background-color: rgba(40, 200, 198, 0);
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 14px; }
+    .features .filter--item:hover {
+      background-color: rgba(40, 200, 198, 0.7);
+      color: #f6f9fa; }
+  .features .filter--item__active {
+    background-color: #28c8c6;
+    color: #f6f9fa; }
+  .features .output--items {
+    display: flex;
+    justify-content: space-around; }
+  .features .output--item {
+    max-width: 382px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px; }
+    .features .output--item a {
+      color: #333b42;
+      font-size: 14px; }
+    .features .output--item img {
+      width: 380px;
+      height: 204px; }
+    .features .output--item h4 {
+      padding: 31px 0 31px 100px; }
+      .features .output--item h4::after {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 14px;
+        background: url("../img/arrownext.svg");
+        right: 48px; }
+
+#dev {
+  padding: 24px 30px; }
+
+#design {
+  padding: 24px 42px; }
+
+#business {
+  padding: 24px 32px; }
+
+#arts {
+  padding: 24px 39px; }
 
 .promo {
   background: url("../img/layer-4.png") no-repeat;
@@ -342,7 +411,8 @@ body {
     line-height: 33px;
     position: relative;
     cursor: pointer;
-    opacity: 0.8; }
+    opacity: 0.8;
+    transition: all 0.5s ease; }
     .social .social--item button {
       font-family: "Fira Sans";
       padding-left: 41px; }
@@ -377,6 +447,7 @@ body {
   justify-content: space-between;
   align-items: baseline;
   font-family: "Montserrat";
+  font-weight: normal;
   font-size: 12px;
   color: #8297a7; }
 

@@ -1,5 +1,86 @@
 .features {
 	background-color: #f6f9fa;
-	text-align: center;
+	
 	padding-top: 136px;
+	
+	.section-header {
+		margin-bottom: 28px;
+		text-align: center;
+	}
+	.section-description {
+		max-width: 901px;
+		line-height: 25px;
+		margin-bottom: 44px;
+		text-align: center;
+	}
+	.filter {
+		max-width: 565px;
+		margin: 0 auto;
+		margin-bottom: 54px;
+		border: 1px solid #28c8c6;
+		color: #28c8c6;
+		font-size: 0;
+		text-transform: uppercase;
+		font-family: "Gotham";
+		font-weight: bold;
+		
+	}
+	.filter--item {
+		background-color: rgba(40, 200, 198, 0);
+		display: inline-block;
+		vertical-align: middle;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		font-size: 14px;
+		&:hover {
+			background-color: rgba(40, 200, 198, 0.7);
+			color: #f6f9fa;
+		}
+	}
+	
+	.filter--item__active {
+		background-color: rgba(40, 200, 198, 1);
+		color: #f6f9fa;
+	}
+	.output--items {
+		display: flex;
+		justify-content: space-around;
+	}
+	.output--item {
+		max-width: 382px;
+		position: relative;
+		background-color: #fff;
+		border-radius: 10px;
+		a {
+			color: $hColor;
+			font-size: 14px;
+		}
+		img {
+			width: 380px;
+			height: 204px;
+		}
+		h4 {
+			padding:31px 0 31px 100px;
+			&::after {
+				position: absolute;
+				content: "";
+				width: 8px;
+				height: 14px;
+				background: url("../img/arrownext.svg");
+				right: 48px;
+			}
+		}
+	}
+}
+#dev {
+	padding: 24px 30px;
+}
+#design {
+	padding: 24px 42px;
+}
+#business {
+	padding: 24px 32px;
+}
+#arts {
+	padding: 24px 39px;
 }
