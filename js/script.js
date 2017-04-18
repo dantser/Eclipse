@@ -11,8 +11,8 @@ $(document).ready(function() {
 
 function slider () {
 	$('.filter--item').click( function () {
-		$('.output--item').fadeTo('400', 0.2, function(){
-			$(this).fadeTo('400', 1);
+		$('.output--item').fadeTo('700', 0.7, function(){
+			$(this).fadeTo('700', 1);
 		});
 		$('.filter--item').removeClass('filter--item__active');
 		$(this).toggleClass('filter--item__active');
