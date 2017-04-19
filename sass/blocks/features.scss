@@ -3,6 +3,7 @@
 	padding-top: 136px;
 	.wrapper {
 		padding-bottom: 98px;
+		position: relative;
 	}
 	.section-header {
 		margin-bottom: 28px;
@@ -38,18 +39,20 @@
 			color: #f6f9fa;
 		}
 	}
-	.filter-output {
-		
-	}
 	.filter--item__active {
 		background-color: rgba(40, 200, 198, 1);
 		color: #f6f9fa;
 	}
+	.filter-output {
+		overflow: hidden;
+		position: relative;
+	}
+	
 	.output--items {
-		display: none;
-		opacity: 0;
+		display: flex;
 		justify-content: space-around;
 		transition: all 0.5s ease;
+		margin-bottom: 2px;
 	}
 	.output--items__active {
 		display: flex;
@@ -61,6 +64,7 @@
 		position: relative;
 		background-color: #fff;
 		border-radius: 10px;
+		transition: transform 1s ease-in;
 		a {
 			color: $hColor;
 			font-size: 14px;

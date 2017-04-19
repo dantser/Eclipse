@@ -3,7 +3,7 @@
 	background-size: cover;
 	padding-top: 333px;
 	position: relative;
-	z-index: 9;
+	z-index: 0;
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -23,20 +23,7 @@
 			height: 17px;
 		}
 	}
-		.arrow-bottom {
-			position: absolute;
-			bottom: -57px;
-			right: 50%;
-			cursor: pointer;
-			width: 114px;
-			height: 114px;
-			border-radius: 50%;
-			background: url("../img/next.svg"), url("../img/novelity-bg.jpg");
-    		background-position: center, bottom;
-    		background-repeat: no-repeat, repeat;
-			z-index: 0;
-			transform: translateX(50%);
-	}
+		
 }
 .head-slogan {
 	font-family: "Montserrat"; 
@@ -70,8 +57,8 @@
 		border-radius: 3px;
 	}
 	#designStyle {
-		width: 282px;	
-		
+		width: 302px;
+		outline: none;
 	}
 	.head-form__email {
 		width: 268px;
@@ -79,6 +66,7 @@
 		font-family: "Montserrat";
 		font-weight: normal;
 		position: relative;
+		padding-right: 45px;
 		&::-webkit-input-placeholder {
 			color:#333333; 
 			opacity: 0.9;
@@ -95,14 +83,33 @@
 			color:#333333; 
 			opacity: 0.9;
 		}
+		
+	}
+	.head-form--select {
+		width: 282px;
+		margin-right: 18px;
+		overflow: hidden;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: "";
+			background: url('../img/arrowbottomform.svg');
+			right: 22px;
+			top: 20px;
+			width: 21px;
+			height: 21px;
+		}
+	}
+	.head-form--email {
+		position: relative;
 		&::after {
 			position: absolute;
 			content: "";
 			width: 13px;
 			height: 15px;
 			background: url("../img/arrowform.svg");
-			right: 20px;
-			
+			right: 40px;
+			top: 23px;
 		}
 	}
 }

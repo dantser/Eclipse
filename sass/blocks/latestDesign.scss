@@ -15,9 +15,23 @@
 		height: 114px;
 		border-radius: 50%;
 		background: url("../img/nextWhite.svg") no-repeat center;
-		z-index: 100;
+		z-index: 1;
 		background-color: $turquoise;
 		transform: translateX(50%);
+	}
+	.arrow-bottom__onTop {
+			position: absolute;
+			top: -57px;
+			right: 50%;
+			cursor: pointer;
+			width: 114px;
+			height: 114px;
+			border-radius: 50%;
+			background: url("../img/next.svg"), url("../img/novelity-bg.jpg");
+    		background-position: center, bottom;
+    		background-repeat: no-repeat, repeat;
+			z-index: 1;
+			transform: translateX(50%);
 	}
 }
 .iphoneImg {
